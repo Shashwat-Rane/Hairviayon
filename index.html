@@ -15,21 +15,21 @@
         }
         .container {
             width: 100%;
-            max-width: 400px;
+            max-width: 600px;
             background-color: #ffffff;
-            padding: 20px;
+            padding: 30px;
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
         h1 {
             margin-bottom: 20px;
-            font-size: 1.8em;
+            font-size: 2.5em;
             color: #333;
         }
         .details {
             margin-bottom: 20px;
-            font-size: 1em;
+            font-size: 1.5em;
         }
         .details p {
             margin: 10px 0;
@@ -38,14 +38,14 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 5px;
+            gap: 10px;
             margin-bottom: 20px;
         }
         .rating label {
-            font-size: 1.2em;
+            font-size: 2em;
             cursor: pointer;
             color: #ccc;
-            padding: 0 5px;
+            padding: 0 10px;
         }
         .rating input[type="radio"] {
             display: none;
@@ -56,19 +56,19 @@
         }
         .rating label::before {
             content: '☆';
-            font-size: 1.5em;
+            font-size: 2.5em;
             color: #ccc;
             cursor: pointer;
         }
         .pay-button {
             display: inline-block;
             width: 100%;
-            padding: 12px;
+            padding: 20px;
             background-color: #007bff;
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
-            font-size: 1.2em;
+            font-size: 1.5em;
             text-align: center;
             cursor: pointer;
             border: none;
@@ -80,31 +80,61 @@
 
         @media (min-width: 600px) {
             .container {
-                max-width: 500px;
-                padding: 30px;
+                max-width: 700px;
+                padding: 40px;
             }
             h1 {
-                font-size: 2em;
+                font-size: 3em;
+            }
+            .details {
+                font-size: 1.8em;
+            }
+            .rating label::before {
+                font-size: 3em;
+            }
+            .pay-button {
+                font-size: 1.8em;
+                padding: 25px;
             }
         }
 
         @media (min-width: 768px) {
             .container {
-                max-width: 600px;
-                padding: 40px;
+                max-width: 800px;
+                padding: 50px;
             }
             h1 {
-                font-size: 2.2em;
+                font-size: 3.5em;
+            }
+            .details {
+                font-size: 2em;
+            }
+            .rating label::before {
+                font-size: 3.5em;
+            }
+            .pay-button {
+                font-size: 2em;
+                padding: 30px;
             }
         }
 
         @media (min-width: 992px) {
             .container {
-                max-width: 700px;
-                padding: 50px;
+                max-width: 900px;
+                padding: 60px;
             }
             h1 {
-                font-size: 2.5em;
+                font-size: 4em;
+            }
+            .details {
+                font-size: 2.2em;
+            }
+            .rating label::before {
+                font-size: 4em;
+            }
+            .pay-button {
+                font-size: 2.2em;
+                padding: 35px;
             }
         }
     </style>
