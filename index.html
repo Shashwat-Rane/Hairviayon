@@ -11,54 +11,59 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+            padding: 10px;
         }
         .container {
-            width: 80%;
-            max-width: 800px;
+            width: 100%;
+            max-width: 400px;
             background-color: #ffffff;
-            padding: 40px;
+            padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
         h1 {
             margin-bottom: 20px;
-            font-size: 2.5em;
+            font-size: 1.8em;
             color: #333;
         }
         .details {
             margin-bottom: 20px;
-            font-size: 1.2em;
+            font-size: 1em;
         }
         .details p {
             margin: 10px 0;
         }
         .rating {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
-            align-items: center;
-            gap: 10px;
+            gap: 5px;
             margin-bottom: 20px;
         }
         .rating label {
-            font-size: 1.1em;
+            font-size: 1.2em;
+            cursor: pointer;
+            color: #ccc;
+            padding: 0 5px;
         }
         .rating input[type="radio"] {
             display: none;
-        }
-        .rating label::before {
-            content: '☆';
-            font-size: 2em;
-            color: #ccc;
-            cursor: pointer;
         }
         .rating input[type="radio"]:checked ~ label::before,
         .rating input[type="radio"]:checked ~ label::before ~ label::before {
             color: #ffc700;
         }
+        .rating label::before {
+            content: '☆';
+            font-size: 1.5em;
+            color: #ccc;
+            cursor: pointer;
+        }
         .pay-button {
             display: inline-block;
-            padding: 12px 30px;
+            width: 100%;
+            padding: 12px;
             background-color: #007bff;
             color: #fff;
             text-decoration: none;
@@ -67,6 +72,7 @@
             text-align: center;
             cursor: pointer;
             border: none;
+            box-sizing: border-box;
         }
         .pay-button:hover {
             background-color: #0056b3;
@@ -78,10 +84,10 @@
         <h1>Galaxy Hair Salon</h1>
         <div class="details">
             <p><strong>Owner:</strong> John</p>
-            <p><strong>Peter</strong></p>
+            <p><strong>Location:</strong> 123 Hair Street</p>
         </div>
         <div class="rating">
-            <form action="#" method="post">
+            <form action="upi://pay?pa=shashwatrane1920-2@okhdfcbank&pn=Shashwat Rane&am=80&cu=INR" method="post">
                 <p>Rate Peter:</p>
                 <input type="radio" id="star5" name="rating" value="5">
                 <label for="star5"></label>
@@ -95,7 +101,11 @@
                 <label for="star1"></label>
             </form>
         </div>
-        <a href="upi://pay?pa=shashwatrane1920-2@okhdfcbank&pn=Shashwat Rane&am=80&cu=INR" class="pay-button">Pay</a>
+        <a href="#" class="pay-button">Pay</a>
     </div>
 </body>
 </html>
+
+
+
+
