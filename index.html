@@ -77,6 +77,36 @@
         .pay-button:hover {
             background-color: #0056b3;
         }
+
+        @media (min-width: 600px) {
+            .container {
+                max-width: 500px;
+                padding: 30px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                max-width: 600px;
+                padding: 40px;
+            }
+            h1 {
+                font-size: 2.2em;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .container {
+                max-width: 700px;
+                padding: 50px;
+            }
+            h1 {
+                font-size: 2.5em;
+            }
+        }
     </style>
 </head>
 <body>
@@ -87,7 +117,7 @@
             <p><strong>Location:</strong> 123 Hair Street</p>
         </div>
         <div class="rating">
-            <form action="upi://pay?pa=shashwatrane1920-2@okhdfcbank&pn=Shashwat Rane&am=80&cu=INR" method="post">
+            <form action="#" method="post">
                 <p>Rate Peter:</p>
                 <input type="radio" id="star5" name="rating" value="5">
                 <label for="star5"></label>
@@ -101,7 +131,7 @@
                 <label for="star1"></label>
             </form>
         </div>
-        <a href="#" class="pay-button">Pay</a>
+        <a href="upi://pay?pa=shashwatrane1920-2@okhdfcbank&pn=Shashwat Rane&am=80&cu=INR" class="pay-button">Pay</a>
     </div>
 </body>
 </html>
